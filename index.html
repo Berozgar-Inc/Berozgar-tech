@@ -1,48 +1,59 @@
 <!DOCTYPE html>
 
 <html lang="en">
-    <head>
-      <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0WR5K9L42"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
 
-```
-      gtag('config', 'G-P0WR5K9L42');
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0WR5K9L42"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+
+        gtag('config', 'G-P0WR5K9L42');
     </script>
-    <link rel="canonical" href="https://buventures.com/">
-    <title>BU Ventures</title>
+    <link rel="canonical" href="https://buventures.tech/">
+    <title>BU Ventures | The Creative Collective</title>
     <meta charset="utf-8">
-    <meta name="description" content="BU Ventures is a student-led venture studio that builds, incubates, and scales products across edtech, fintech, and experiences.">
-    <meta name="keywords" content="bu ventures, buventures, venture studio, edtech, fintech">
+    <meta name="description"
+        content="BU Ventures is a creative collective of makers, misfits, rebels and minds in motion — designing, disrupting and building insanely great digital products that don't exist yet.">
+    <meta name="keywords" content="BU Ventures, buventures, digital products, ventures">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="BU Ventures">
-    <meta property="og:description" content="BU Ventures is a student-led venture studio that builds, incubates, and scales products across edtech, fintech, and experiences.">
-    <meta property="og:image" content="https://buventures.com/static/social.png">
-    <meta property="og:url" content="https://buventures.com/">
+    <meta property="og:title" content="BU Ventures - building next gen digital products">
+    <meta property="og:description"
+        content="BU Ventures is a creative collective of makers, misfits, rebels and minds in motion — designing, disrupting and building insanely great digital products that don't exist yet.">
+    <meta property="og:image" content="https://buventures.tech/static/social.png">
+    <meta property="og:url" content="https://buventures.tech/">
 
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#0A0A0A" />
-    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="icon" href="/static/favicon.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="android-chrome-192x192.png">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         a {
             text-decoration: none;
         }
+
         .jobs::-webkit-scrollbar {
             display: none;
         }
+
         :root {
             --padding: 6vw;
             --font-size: 3vw;
             --bg-color: #0A0A0A;
         }
+
         .slider {
             height: 10vw;
             width: 100%;
@@ -50,11 +61,13 @@
             overflow: visible;
             position: relative;
         }
+
         .slider ul {
             margin: 0;
             padding: 0;
             position: relative;
         }
+
         .slider li {
             width: 100%;
             height: 10vw;
@@ -62,92 +75,354 @@
             top: -325px;
             list-style: none;
         }
+
         .slider li.anim1 {
             animation: cycle 36s linear infinite;
         }
+
         .slider li.anim2 {
             animation: cycle2 36s linear infinite;
         }
+
         .slider li.anim3 {
             animation: cycle3 36s linear infinite;
         }
+
         .slider li.anim4 {
             animation: cycle4 36s linear infinite;
         }
+
         .slider li.anim5 {
             animation: cycle5 36s linear infinite;
         }
+
         .slider li.anim6 {
             animation: cycle6 36s linear infinite;
         }
 
+        .brand-row {
+            display: flex;
+            align-items: center;
+        }
+
+        .brand-logo {
+            object-fit: contain;
+            flex-shrink: 0;
+        }
+
+        .brand-text h1 {
+            margin: 0;
+        }
+
+        .brand-text .slider-subtext {
+            margin-bottom: 0;
+        }
+
+        .blog-track {
+            will-change: transform;
+        }
+
+        .blog-list:hover .blog-track {
+            animation-play-state: paused;
+        }
+
+        @keyframes blogscroll {
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-50%);
+            }
+        }
+
         @keyframes cycle {
-            0% { top: 0px; opacity: 1; z-index: 0; }
-            4% { top: 0px; opacity: 1; }
-            12.666% { top: 0px; opacity: 1; z-index: 0; }
-            16.666% { top: 325px; opacity: 0; z-index: 0; }
-            17.666% { top: -325px; opacity: 0; z-index: -1; }
-            96% { top: -325px; opacity: 0; z-index: -1; }
-            100% { top: 0px; opacity: 1; z-index: 0; }
+            0% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            4% {
+                top: 0px;
+                opacity: 1;
+            }
+
+            12.666% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            16.666% {
+                top: 325px;
+                opacity: 0;
+                z-index: 0;
+            }
+
+            17.666% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            96% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            100% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
         }
+
         @keyframes cycle2 {
-            0% { top: -325px; opacity: 0; z-index: -1; }
-            12.666% { top: -325px; opacity: 0; z-index: -1; }
-            16.666% { top: 0px; opacity: 1; z-index: 0; }
-            20.666% { top: 0px; opacity: 1; }
-            29.333% { top: 0px; opacity: 1; z-index: 0; }
-            33.333% { top: 325px; opacity: 0; z-index: 0; }
-            34.333% { top: -325px; opacity: 0; z-index: -1; }
-            100% { top: -325px; opacity: 0; z-index: -1; }
+            0% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            12.666% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            16.666% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            20.666% {
+                top: 0px;
+                opacity: 1;
+            }
+
+            29.333% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            33.333% {
+                top: 325px;
+                opacity: 0;
+                z-index: 0;
+            }
+
+            34.333% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            100% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
         }
+
         @keyframes cycle3 {
-            0% { top: -325px; opacity: 0; z-index: -1; }
-            29.333% { top: -325px; opacity: 0; z-index: -1; }
-            33.333% { top: 0px; opacity: 1; z-index: 0; }
-            37.333% { top: 0px; opacity: 1; }
-            46% { top: 0px; opacity: 1; z-index: 0; }
-            50% { top: 325px; opacity: 0; z-index: 0; }
-            51% { top: -325px; opacity: 0; z-index: -1; }
-            100% { top: -325px; opacity: 0; z-index: -1; }
+            0% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            29.333% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            33.333% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            37.333% {
+                top: 0px;
+                opacity: 1;
+            }
+
+            46% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            50% {
+                top: 325px;
+                opacity: 0;
+                z-index: 0;
+            }
+
+            51% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            100% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
         }
+
         @keyframes cycle4 {
-            0% { top: -325px; opacity: 0; z-index: -1; }
-            46% { top: -325px; opacity: 0; z-index: -1; }
-            50% { top: 0px; opacity: 1; z-index: 0; }
-            54% { top: 0px; opacity: 1; }
-            62.666% { top: 0px; opacity: 1; z-index: 0; }
-            66.666% { top: 325px; opacity: 0; z-index: 0; }
-            67.666% { top: -325px; opacity: 0; z-index: -1; }
-            100% { top: -325px; opacity: 0; z-index: -1; }
+            0% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            46% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            50% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            54% {
+                top: 0px;
+                opacity: 1;
+            }
+
+            62.666% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            66.666% {
+                top: 325px;
+                opacity: 0;
+                z-index: 0;
+            }
+
+            67.666% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            100% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
         }
+
         @keyframes cycle5 {
-            0% { top: -325px; opacity: 0; z-index: -1; }
-            62.666% { top: -325px; opacity: 0; z-index: -1; }
-            66.666% { top: 0px; opacity: 1; z-index: 0; }
-            70.666% { top: 0px; opacity: 1; }
-            79.333% { top: 0px; opacity: 1; z-index: 0; }
-            83.333% { top: 325px; opacity: 0; z-index: 0; }
-            84.333% { top: -325px; opacity: 0; z-index: -1; }
-            100% { top: -325px; opacity: 0; z-index: -1; }
+            0% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            62.666% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            66.666% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            70.666% {
+                top: 0px;
+                opacity: 1;
+            }
+
+            79.333% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            83.333% {
+                top: 325px;
+                opacity: 0;
+                z-index: 0;
+            }
+
+            84.333% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            100% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
         }
+
         @keyframes cycle6 {
-            0% { top: -325px; opacity: 0; z-index: -1; }
-            79.333% { top: -325px; opacity: 0; z-index: -1; }
-            83.333% { top: 0px; opacity: 1; z-index: 0; }
-            87.333% { top: 0px; opacity: 1; }
-            96% { top: 0px; opacity: 1; z-index: 0; }
-            100% { top: 325px; opacity: 0; z-index: 0; }
+            0% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            79.333% {
+                top: -325px;
+                opacity: 0;
+                z-index: -1;
+            }
+
+            83.333% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            87.333% {
+                top: 0px;
+                opacity: 1;
+            }
+
+            96% {
+                top: 0px;
+                opacity: 1;
+                z-index: 0;
+            }
+
+            100% {
+                top: 325px;
+                opacity: 0;
+                z-index: 0;
+            }
         }
 
         @media screen and (min-width: 1000px) {
             .info {
                 display: none;
             }
+
             .mask {
                 overflow: hidden;
                 height: 20vw;
                 width: 50vw;
             }
+
             .container {
                 width: 100vw;
                 height: 100vh;
@@ -155,15 +430,18 @@
                 justify-content: center;
                 align-items: center;
             }
+
             .logo {
                 position: absolute;
                 bottom: var(--padding);
                 left: var(--padding);
                 width: 25vh;
             }
+
             .logo-text {
                 font-family: 'Space Grotesk', sans-serif;
             }
+
             .mobile-brand {
                 display: none;
             }
@@ -177,6 +455,7 @@
                 padding-top: 10vh;
                 background-image: linear-gradient(rgba(10, 10, 10, 0.1) 0%, rgba(10, 10, 10, 1) 50%, rgba(10, 10, 10, 1) 100%);
             }
+
             .hire {
                 position: absolute;
                 top: var(--padding);
@@ -184,6 +463,7 @@
                 max-width: 70%;
                 display: block;
             }
+
             .lines {
                 position: absolute;
                 top: 2.5vw;
@@ -192,6 +472,7 @@
                 height: 4.6vw;
                 display: block;
             }
+
             .side-bar {
                 height: 100%;
                 width: 25vw;
@@ -201,17 +482,20 @@
                 background-color: var(--bg-color);
                 overflow-x: hidden;
             }
+
             .job {
                 position: relative;
                 margin-top: 5vw;
                 margin-bottom: 5vw;
             }
+
             .jobs-title-font {
                 line-height: 1.2;
                 font-size: 1.7vw;
                 letter-spacing: -1.8px;
                 padding-bottom: 30px;
             }
+
             .jobs {
                 position: relative;
                 -ms-overflow-style: none;
@@ -220,10 +504,12 @@
                 overflow-x: hidden;
                 height: 60vh;
             }
+
             h1 {
                 font-size: var(--font-size);
                 letter-spacing: -3px;
             }
+
             p {
                 font-family: 'Space Grotesk', sans-serif;
                 font-size: var(--font-size);
@@ -232,6 +518,7 @@
                 margin: 0;
                 letter-spacing: -0.5px;
             }
+
             .slider-subtext {
                 font-family: 'Space Grotesk', sans-serif;
                 font-size: 0.95vw;
@@ -241,11 +528,22 @@
                 margin-top: 0.35vw;
                 display: block;
             }
+
+            .brand-row {
+                gap: 1.5vw;
+            }
+
+            .brand-logo {
+                width: 5vw;
+                height: 5vw;
+            }
+
             .about-text {
                 font-size: 0.8vw;
                 font-variant: regular;
                 display: block;
             }
+
             .job-title-font {
                 line-height: 1.2;
                 font-size: 0.8vw;
@@ -253,6 +551,7 @@
                 margin-bottom: 3px;
                 font-weight: 500;
             }
+
             .job-subtitle-font {
                 line-height: 1.2;
                 font-size: 0.7vw;
@@ -260,6 +559,7 @@
                 opacity: 0.5;
                 margin-bottom: 5px;
             }
+
             .job-description-font {
                 line-height: 1.2;
                 font-size: 0.8vw;
@@ -270,9 +570,138 @@
             .primary {
                 animation: primary 40s linear infinite;
             }
+
             @keyframes primary {
-                from { top: 10%; }
-                to { top: -260%; }
+                from {
+                    top: 10%;
+                }
+
+                to {
+                    top: -260%;
+                }
+            }
+
+            .founders {
+                position: absolute;
+                top: 22vh;
+                left: var(--padding);
+                max-width: 52vw;
+                z-index: 5;
+                display: none;
+            }
+
+            .founders-title {
+                font-family: 'Space Grotesk', sans-serif;
+                color: #fff;
+                font-size: 2.6vw;
+                font-weight: 600;
+                letter-spacing: -2.5px;
+                margin: 0 0 2.5vw 0;
+            }
+
+            .founders-grid {
+                display: flex;
+                flex-direction: row;
+                gap: 2.5vw;
+            }
+
+            .founder-card {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .founder-photo {
+                width: 10vw;
+                height: 12vw;
+                object-fit: cover;
+                border-radius: 10px;
+                margin-bottom: 1vw;
+            }
+
+            .founder-role {
+                font-family: 'Space Grotesk', sans-serif;
+                color: #fff;
+                line-height: 1.2;
+                font-size: 0.7vw;
+                opacity: 0.5;
+                margin: 0;
+            }
+
+            .founder-name {
+                font-family: 'Space Grotesk', sans-serif;
+                color: #fff;
+                line-height: 1.2;
+                font-size: 1vw;
+                font-weight: 500;
+                letter-spacing: -0.5px;
+                margin: 5px 0 3px 0;
+            }
+
+            .founder-email {
+                font-family: 'Space Grotesk', sans-serif;
+                line-height: 1.2;
+                font-size: 0.8vw;
+                font-weight: 200;
+                opacity: 0.5;
+                margin: 0;
+                white-space: nowrap;
+            }
+
+            .founder-email a {
+                color: #fff;
+            }
+
+            .founder-photo-link {
+                display: block;
+            }
+
+            .blogs {
+                position: absolute;
+                top: 10vh;
+                left: var(--padding);
+                max-width: 52vw;
+                z-index: 5;
+                display: none;
+            }
+
+            .blog-list {
+                position: relative;
+                overflow: hidden;
+                height: 46vh;
+            }
+
+            .blog-track {
+                animation: blogscroll 45s linear infinite;
+            }
+
+            .blog-card {
+                display: block;
+                margin-bottom: 3.5vw;
+                text-decoration: none;
+            }
+
+            .blog-title {
+                line-height: 1.2;
+                font-size: 1vw;
+                font-weight: 500;
+                letter-spacing: -0.5px;
+                margin-bottom: 4px;
+            }
+
+            .blog-date {
+                line-height: 1.2;
+                font-size: 0.7vw;
+                opacity: 0.5;
+                margin-bottom: 6px;
+            }
+
+            .blog-preview {
+                line-height: 1.3;
+                font-size: 0.8vw;
+                font-weight: 200;
+                opacity: 0.5;
+                max-width: 34vw;
             }
         }
 
@@ -282,9 +711,11 @@
                 --font-size: 3vw;
                 --bg-color: #0A0A0A;
             }
+
             .jobs-title-font {
                 display: none;
             }
+
             .logo {
                 position: absolute;
                 top: 8vh;
@@ -295,12 +726,15 @@
                 align-items: center;
                 gap: 2vw;
             }
+
             .logo img {
                 width: 22vw !important;
             }
+
             .logo-text {
                 display: none;
             }
+
             .mobile-brand {
                 display: block;
                 font-family: 'Space Grotesk', sans-serif;
@@ -310,6 +744,7 @@
                 color: #fff;
                 line-height: 1.2;
             }
+
             .lines {
                 position: absolute;
                 top: 61vh;
@@ -317,6 +752,7 @@
                 max-width: 80%;
                 height: 10vw;
             }
+
             h1 {
                 font-size: 6vw;
                 font-weight: 500;
@@ -324,11 +760,13 @@
                 max-width: 80%;
                 letter-spacing: -0.5px;
             }
+
             .mask {
                 overflow: hidden;
                 height: 24vw;
                 width: 100vw;
             }
+
             .info {
                 position: absolute;
                 top: 79vh;
@@ -336,6 +774,7 @@
                 max-width: 95%;
                 z-index: 3;
             }
+
             .info-button {
                 font-family: 'Space Grotesk', sans-serif;
                 font-size: 3.5vw;
@@ -353,9 +792,11 @@
                 padding-left: 0px;
                 margin-left: 0px;
             }
+
             .info-button:focus {
                 outline: none;
             }
+
             .slider-subtext {
                 font-family: 'Space Grotesk', sans-serif;
                 font-size: 2.8vw;
@@ -365,6 +806,16 @@
                 margin-top: 2vw;
                 max-width: 80%;
             }
+
+            .brand-row {
+                gap: 2.5vw;
+            }
+
+            .brand-logo {
+                width: 10vw;
+                height: 10vw;
+            }
+
             .about {
                 position: absolute;
                 top: 44vh;
@@ -373,6 +824,7 @@
                 z-index: 1;
                 padding-top: 10vh;
             }
+
             .about-text {
                 font-size: 3.2vw;
                 font-variant: regular;
@@ -381,6 +833,7 @@
                 display: none;
                 letter-spacing: -0.1px;
             }
+
             .overlay {
                 position: absolute;
                 top: 40vh;
@@ -390,6 +843,7 @@
                 background-image: linear-gradient(rgba(10, 10, 10, 0), rgba(10, 10, 10, 1));
                 z-index: 2;
             }
+
             .hire {
                 position: absolute;
                 top: 25vh;
@@ -398,6 +852,7 @@
                 background-color: #0A0A0A;
                 display: none;
             }
+
             .jobs {
                 position: relative;
                 -ms-overflow-style: none;
@@ -407,14 +862,17 @@
                 height: 45vh;
                 background-image: linear-gradient(rgba(10, 10, 10, 0.1) 0%, rgba(10, 10, 10, 1) 50%, rgba(10, 10, 10, 1) 100%);
             }
+
             .jobs::-webkit-scrollbar {
                 display: none;
             }
+
             .job {
                 position: relative;
                 margin-top: 5vw;
                 margin-bottom: 5vw;
             }
+
             .job-title-font {
                 line-height: 1.1;
                 font-size: 3.2vw;
@@ -424,6 +882,7 @@
                 font-weight: 500;
                 letter-spacing: -0.1px;
             }
+
             .job-subtitle-font {
                 line-height: 1.3;
                 font-size: 2.8vw;
@@ -433,6 +892,7 @@
                 letter-spacing: -0.1px;
                 margin-bottom: 10px;
             }
+
             .job-description-font {
                 line-height: 1.2;
                 font-size: 3.2vw;
@@ -446,41 +906,222 @@
             .primary {
                 animation: primary 14s linear infinite;
             }
+
             @keyframes primary {
-                from { top: 10%; }
-                to { top: -235%; }
+                from {
+                    top: 10%;
+                }
+
+                to {
+                    top: -235%;
+                }
+            }
+
+            .blogs {
+                position: absolute;
+                top: 17vh;
+                left: var(--padding);
+                right: var(--padding);
+                z-index: 5;
+                display: none;
+            }
+
+            .blog-list {
+                position: relative;
+                overflow: hidden;
+                height: 50vh;
+            }
+
+            .blog-track {
+                animation: blogscroll 30s linear infinite;
+            }
+
+            .blog-card {
+                display: block;
+                margin-bottom: 7vw;
+                text-decoration: none;
+            }
+
+            .blog-title {
+                line-height: 1.1;
+                font-size: 4.2vw;
+                font-weight: 500;
+                letter-spacing: -0.1px;
+                margin-bottom: 8px;
+                color: #fff;
+            }
+
+            .blog-date {
+                line-height: 1.3;
+                font-size: 2.8vw;
+                opacity: 0.5;
+                letter-spacing: -0.1px;
+                margin-bottom: 8px;
+                color: #fff;
+            }
+
+            .blog-preview {
+                line-height: 1.2;
+                font-size: 3.2vw;
+                font-weight: 200;
+                opacity: 0.5;
+                color: #fff;
+            }
+
+            .founders {
+                position: absolute;
+                top: 34vh;
+                left: var(--padding);
+                right: var(--padding);
+                z-index: 5;
+                display: none;
+            }
+
+            .founders-title {
+                font-family: 'Space Grotesk', sans-serif;
+                color: #fff;
+                font-size: 6vw;
+                font-weight: 500;
+                letter-spacing: -0.5px;
+                margin: 0 0 4vw 0;
+            }
+
+            .founders-grid {
+                display: flex;
+                flex-direction: row;
+                gap: 3vw;
+            }
+
+            .founder-card {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 25vw;
+            }
+
+            .founder-photo {
+                width: 25vw;
+                height: 32vw;
+                object-fit: cover;
+                border-radius: 8px;
+                margin-bottom: 2.5vw;
+            }
+
+            .founder-role {
+                font-family: 'Space Grotesk', sans-serif;
+                color: #fff;
+                line-height: 1.3;
+                font-size: 2.8vw;
+                letter-spacing: -0.1px;
+                opacity: 0.5;
+                margin: 0;
+            }
+
+            .founder-name {
+                font-family: 'Space Grotesk', sans-serif;
+                color: #fff;
+                line-height: 1.1;
+                font-size: 3.6vw;
+                font-weight: 500;
+                letter-spacing: -0.1px;
+                margin: 1.5vw 0 1vw 0;
+            }
+
+            .founder-email {
+                font-family: 'Space Grotesk', sans-serif;
+                line-height: 1.2;
+                font-size: 1.9vw;
+                font-weight: 200;
+                opacity: 0.5;
+                margin: 0;
+                white-space: nowrap;
+            }
+
+            .founder-email a {
+                color: #fff;
+            }
+
+            .founder-photo-link {
+                display: block;
             }
         }
     </style>
 </head>
+
 <body style="background-color: var(--bg-color);">
     <div class="lines">
         <div class="slider">
             <div class="mask">
                 <ul>
                     <li class="anim1">
-                        <h1 style="font-family: 'Space Grotesk', sans-serif; color: white;">Heroes United</h1>
-                        <p class="slider-subtext">We reverse-engineer the best customer experiences on earth. Then bolt them onto yours.</p>
+                        <div class="brand-row">
+                            <img class="brand-logo"
+                                src="https://res.cloudinary.com/dsgqia1gt/image/upload/v1782595670/HeroesUnited_hy0ztf.png"
+                                alt="Heroes United">
+                            <div class="brand-text">
+                                <h1 style="font-family: 'Space Grotesk', sans-serif; color: white;">Heroes United</h1>
+                                <p class="slider-subtext">We reverse-engineer the best customer experiences on earth.
+                                    Then bolt them onto yours.</p>
+                            </div>
+                        </div>
                     </li>
                     <li class="anim2">
-                        <h1 style="font-family: 'Space Grotesk', sans-serif; color: white;">Elev8</h1>
-                        <p class="slider-subtext">Helping teams rise faster</p>
+                        <div class="brand-row">
+                            <img class="brand-logo"
+                                src="https://res.cloudinary.com/dsgqia1gt/image/upload/v1782595961/Elev8_ul4pw2.png"
+                                alt="Elev8">
+                            <div class="brand-text">
+                                <h1 style="font-family: 'Space Grotesk', sans-serif; color: white;">Elev8</h1>
+                                <p class="slider-subtext">Helping students use AI to prepare faster &amp; better</p>
+                            </div>
+                        </div>
                     </li>
                     <li class="anim3">
-                        <h1 style="font-family: 'Space Grotesk', sans-serif; color: white;">Prod X</h1>
-                        <p class="slider-subtext">We put a price on your procrastination. Suddenly, focus becomes easy.</p>
+                        <div class="brand-row">
+                            <img class="brand-logo"
+                                src="https://res.cloudinary.com/dsgqia1gt/image/upload/v1782595670/PHI_exlvjv.png"
+                                alt="Phi">
+                            <div class="brand-text">
+                                <h1 style="font-family: 'Space Grotesk', sans-serif; color: white;">Phi</h1>
+                                <p class="slider-subtext">We put a price on your procrastination. Suddenly, focus
+                                    becomes
+                                    easy.</p>
+                            </div>
+                        </div>
                     </li>
                     <li class="anim4">
-                        <h1 style="font-family: 'Space Grotesk', sans-serif; color: white;">Egress</h1>
-                        <p class="slider-subtext">Inventory kills fashion brands. We fix that.</p>
+                        <div class="brand-row">
+                            <img class="brand-logo"
+                                src="https://res.cloudinary.com/dsgqia1gt/image/upload/v1782595670/Egress_yeuktf.png"
+                                alt="Egress">
+                            <div class="brand-text">
+                                <h1 style="font-family: 'Space Grotesk', sans-serif; color: white;">Egress</h1>
+                                <p class="slider-subtext">Inventory kills fashion brands. We fix that.</p>
+                            </div>
+                        </div>
                     </li>
                     <li class="anim5">
-                        <h1 style="font-family: 'Space Grotesk', sans-serif; color: white;">Acronym Pod</h1>
-                        <p class="slider-subtext">We explain tech in 5 minutes.</p>
+                        <div class="brand-row">
+                            <img class="brand-logo"
+                                src="https://res.cloudinary.com/dsgqia1gt/image/upload/v1782595670/Acronym_zz12js.png"
+                                alt="Acronym Pod">
+                            <div class="brand-text">
+                                <h1 style="font-family: 'Space Grotesk', sans-serif; color: white;">Acronym Pod</h1>
+                                <p class="slider-subtext">We explain tech in 5 minutes.</p>
+                            </div>
+                        </div>
                     </li>
                     <li class="anim6">
-                        <h1 style="font-family: 'Space Grotesk', sans-serif; color: white;">KnctED</h1>
-                        <p class="slider-subtext">We replaced 12 school tools with one. Nobody missed the other 11.</p>
+                        <div class="brand-row">
+                            <img class="brand-logo"
+                                src="https://res.cloudinary.com/dsgqia1gt/image/upload/v1782595670/KnctED_ijmufs.png"
+                                alt="KnctED">
+                            <div class="brand-text">
+                                <h1 style="font-family: 'Space Grotesk', sans-serif; color: white;">KnctED</h1>
+                                <p class="slider-subtext">We replaced 12 school tools with one. Nobody missed the other
+                                    11.</p>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -488,14 +1129,154 @@
     </div>
 
     <div class="logo">
-        <img src="https://res.cloudinary.com/dsgqia1gt/image/upload/q_auto/f_auto/v1775309859/BU_Ventures.png" alt="logo" style="width: 70%;">
+        <img src="https://res.cloudinary.com/dsgqia1gt/image/upload/q_auto/f_auto/v1775309859/BU_Ventures.png"
+            alt="logo" style="width: 70%;">
         <div class="mobile-brand">© 2026 BU VENTURES PVT. LTD.</div>
         <p style="font-size: 12px;" class="logo-text"> © 2026 BU VENTURES PVT. LTD. </p>
         <p style="font-size: 10px; padding-top: 1px;" class="logo-text">
-            <a href="mailto:careers@buventures.com" style="color: #fff;">[ CONTACT US ]</a>
-            <a href="founders.html" style="color: #fff; margin-left: 10px;">[ FOUNDERS ]</a>
-            <a href="blogs.html" style="color: #fff; margin-left: 10px;">[ BLOGS ]</a>
+            <a href="/cdn-cgi/l/email-protection#eaca8298c79e8f8b87aa89989f9cc485988d" style="color: #fff;">[ CONTACT US
+                ]</a>
+            <a href="javascript:void(0)" onclick="toggle_founders()" style="color: #fff; margin-left: 10px;">[ FOUNDERS
+                ]</a>
+            <a href="javascript:void(0)" onclick="toggle_blogs()" style="color: #fff; margin-left: 10px;">[ BLOGS ]</a>
         </p>
+    </div>
+
+    <div class="founders">
+        <p class="founders-title">//Founders</p>
+        <div class="founders-grid">
+            <div class="founder-card">
+                <a class="founder-photo-link" href="https://www.linkedin.com/in/priteshbuventures/" target="_blank"
+                    rel="noopener">
+                    <img class="founder-photo"
+                        src="https://res.cloudinary.com/dsgqia1gt/image/upload/v1781938030/IMG_0612_Copy_Copy_tahidh.jpg"
+                        alt="Pritesh">
+                </a>
+                <div class="founder-info">
+                    <p class="founder-role">Co-Founder</p>
+                    <p class="founder-name">Pritesh</p>
+                    <p class="founder-email"><a href="mailto:pritesh@buventures.tech">pritesh@buventures.tech</a></p>
+                </div>
+            </div>
+            <div class="founder-card">
+                <a class="founder-photo-link" href="https://www.linkedin.com/in/saahi-dubey-5a1145373/" target="_blank"
+                    rel="noopener">
+                    <img class="founder-photo"
+                        src="https://res.cloudinary.com/dsgqia1gt/image/upload/v1781937972/1751567358953_x8ikuz.png"
+                        alt="Saahi">
+                </a>
+                <div class="founder-info">
+                    <p class="founder-role">Co-Founder</p>
+                    <p class="founder-name">Saahi</p>
+                    <p class="founder-email"><a href="mailto:saahi@buventures.tech">saahi@buventures.tech</a></p>
+                </div>
+            </div>
+            <div class="founder-card">
+                <a class="founder-photo-link" href="https://www.linkedin.com/in/aditva/" target="_blank" rel="noopener">
+                    <img class="founder-photo"
+                        src="https://res.cloudinary.com/dsgqia1gt/image/upload/v1781937971/1740385447588_a2juzd.jpg"
+                        alt="Aditva">
+                </a>
+                <div class="founder-info">
+                    <p class="founder-role">Co-Founder</p>
+                    <p class="founder-name">Aditva</p>
+                    <p class="founder-email"><a href="mailto:aditva@buventures.tech">aditva@buventures.tech</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blogs">
+        <p class="founders-title">//Blogs</p>
+        <div class="blog-list">
+            <div class="blog-track">
+
+                <a class="blog-card" href="hu-cultural-moments.html">
+                    <p class="blog-title">Turning Movie Tickets Into Cultural Moments</p>
+                    <p class="blog-date">June 2026</p>
+                    <p class="blog-preview">How Heroes United reinvents the fan screening — calibrated audio, immersive
+                        pre-shows, creator moments and giveaways that turn showtime into a rush.</p>
+                </a>
+
+                <a class="blog-card" href="hu-infinity-con.html">
+                    <p class="blog-title">Inside Infinity Con: India's Fandom Under One Roof</p>
+                    <p class="blog-date">May 2026</p>
+                    <p class="blog-preview">Cosplay, creator panels and controlled chaos — building a convention that
+                        celebrates Marvel, DC, Star Wars and more for 56,000+ fans across four cities.</p>
+                </a>
+
+                <a class="blog-card" href="hu-watch-together.html">
+                    <p class="blog-title">Why Fans Don't Want to Watch Alone Anymore</p>
+                    <p class="blog-date">April 2026</p>
+                    <p class="blog-preview">390+ events in, here's what we've learned about community, belonging, and
+                        why the big screen is always better with your people.</p>
+                </a>
+
+                <a class="blog-card" href="kncted-one-app.html">
+                    <p class="blog-title">One App to Replace Twelve: Rethinking the School Tech Stack</p>
+                    <p class="blog-date">March 2026</p>
+                    <p class="blog-preview">Attendance, fees, messaging, homework, timetables — schools juggle a dozen
+                        disconnected tools. Here's how KnctED folds them into one.</p>
+                </a>
+
+                <a class="blog-card" href="kncted-tool-overload.html">
+                    <p class="blog-title">The Hidden Cost of Tool Overload in Schools</p>
+                    <p class="blog-date">February 2026</p>
+                    <p class="blog-preview">Every extra login is friction for teachers and parents. What fragmented
+                        school software really costs — and how to cut it down to one.</p>
+                </a>
+
+                <a class="blog-card" href="kncted-for-teachers.html">
+                    <p class="blog-title">Built for Teachers, Loved by Parents</p>
+                    <p class="blog-date">January 2026</p>
+                    <p class="blog-preview">A closer look at how KnctED keeps the whole school community connected
+                        without adding to anyone's workload.</p>
+                </a>
+
+                <!-- duplicate set for a seamless looping marquee (hidden from a11y/tab order) -->
+                <a class="blog-card" href="hu-cultural-moments.html" aria-hidden="true" tabindex="-1">
+                    <p class="blog-title">Turning Movie Tickets Into Cultural Moments</p>
+                    <p class="blog-date">June 2026</p>
+                    <p class="blog-preview">How Heroes United reinvents the fan screening — calibrated audio, immersive
+                        pre-shows, creator moments and giveaways that turn showtime into a rush.</p>
+                </a>
+
+                <a class="blog-card" href="hu-infinity-con.html" aria-hidden="true" tabindex="-1">
+                    <p class="blog-title">Inside Infinity Con: India's Fandom Under One Roof</p>
+                    <p class="blog-date">May 2026</p>
+                    <p class="blog-preview">Cosplay, creator panels and controlled chaos — building a convention that
+                        celebrates Marvel, DC, Star Wars and more for 56,000+ fans across four cities.</p>
+                </a>
+
+                <a class="blog-card" href="hu-watch-together.html" aria-hidden="true" tabindex="-1">
+                    <p class="blog-title">Why Fans Don't Want to Watch Alone Anymore</p>
+                    <p class="blog-date">April 2026</p>
+                    <p class="blog-preview">390+ events in, here's what we've learned about community, belonging, and
+                        why the big screen is always better with your people.</p>
+                </a>
+
+                <a class="blog-card" href="kncted-one-app.html" aria-hidden="true" tabindex="-1">
+                    <p class="blog-title">One App to Replace Twelve: Rethinking the School Tech Stack</p>
+                    <p class="blog-date">March 2026</p>
+                    <p class="blog-preview">Attendance, fees, messaging, homework, timetables — schools juggle a dozen
+                        disconnected tools. Here's how KnctED folds them into one.</p>
+                </a>
+
+                <a class="blog-card" href="kncted-tool-overload.html" aria-hidden="true" tabindex="-1">
+                    <p class="blog-title">The Hidden Cost of Tool Overload in Schools</p>
+                    <p class="blog-date">February 2026</p>
+                    <p class="blog-preview">Every extra login is friction for teachers and parents. What fragmented
+                        school software really costs — and how to cut it down to one.</p>
+                </a>
+
+                <a class="blog-card" href="kncted-for-teachers.html" aria-hidden="true" tabindex="-1">
+                    <p class="blog-title">Built for Teachers, Loved by Parents</p>
+                    <p class="blog-date">January 2026</p>
+                    <p class="blog-preview">A closer look at how KnctED keeps the whole school community connected
+                        without adding to anyone's workload.</p>
+                </a>
+            </div>
+        </div>
     </div>
 
     <div class="side-bar">
@@ -505,63 +1286,114 @@
             <p class="jobs-title-font"><b>We’re hiring for multiple positions</b></p>
             <div class="jobs scroll-parent">
 
-                <a href="https://forms.gle/HFjGvvjxp5oDDHr66" target="_blank">
+                <a href="/cdn-cgi/l/email-protection#ff8c9e91969b97869ebf9c8d8a89d1908d98c08c8a9d959a9c8bc2be8f8f93969c9e8b969091df99908ddfbb959e919890dfbb9a899a93908f9a8d"
+                    target="_blank">
                     <div class="job scroll-element primary">
                         <div class="job-title" style="padding-bottom: 1vh;">
-                            <p class="job-title-font">Digital Growth Strategist</p>
-                            <p class="job-subtitle-font">KnctED Vertical · Hybrid, Bengaluru</p>
+                            <p class="job-title-font">Django Developer</p>
+                            <p class="job-subtitle-font">Exp: 1+ years</p>
                         </div>
-                        <p class="job-description-font">Own end-to-end social media for our AI-powered school management platform — from copywriting and content shoots to devising growth strategies that move the needle.</p>
+                        <p class="job-description-font">You will be helping us develop and maintain various digital
+                            products. We expect you to have some experience with Django ORM, Django Rest Framework.</p>
                     </div>
                 </a>
 
-                <a href="https://forms.gle/HFjGvvjxp5oDDHr66" target="_blank">
+                <a href="/cdn-cgi/l/email-protection#790b16111817391a0b0c0f57160b1e460a0c1b131c1a0d4438090915101a180d101617591f160b593f150c0d0d1c0b5930170d1c0b17"
+                    target="_blank">
                     <div class="job scroll-element primary">
                         <div class="job-title" style="padding-bottom: 1vh;">
-                            <p class="job-title-font">Creative Strategy Associate</p>
-                            <p class="job-subtitle-font">Heros United Vertical · Hybrid, Bengaluru</p>
+                            <p class="job-title-font">Flutter Intern</p>
+                            <p class="job-subtitle-font">Exp: 1+ years</p>
                         </div>
-                        <p class="job-description-font">Shape the creative direction and social presence for our fan experience brand — content creation, community engagement, and campaign strategy that builds cult followings.</p>
+                        <p class="job-description-font">You will be working with Flutter SDK &amp; Dart programming
+                            languages to translate UI/UX designs and wireframes into code.</p>
                     </div>
                 </a>
 
-                <a href="https://forms.gle/HFjGvvjxp5oDDHr66" target="_blank">
+                <a href="/cdn-cgi/l/email-protection#81f7e0eff2e9c1e2f3f4f7afeef3e6bef2f4e3ebe4e2f5bcc0f1f1ede8e2e0f5e8eeefa1e7eef3a1d1f3eee5f4e2f5a1c5e4f2e8e6efa1c8eff5e4f3ef"
+                    target="_blank">
                     <div class="job scroll-element primary">
                         <div class="job-title" style="padding-bottom: 1vh;">
-                            <p class="job-title-font">Institutional Partnerships Associate</p>
-                            <p class="job-subtitle-font">KnctED Vertical · Hybrid, Bengaluru</p>
+                            <p class="job-title-font">Product Design Intern</p>
+                            <p class="job-subtitle-font">Exp: 1+ years</p>
                         </div>
-                        <p class="job-description-font">Connect with schools, close partnerships, build outbound funnels, and manage ongoing client relationships to drive adoption of our school management platform.</p>
+                        <p class="job-description-font">As a part of the design team, you will be responsible for
+                            creating functional and elegant solutions in the form of wireframes &amp; prototypes and
+                            collaborating with people across teams to convert your vision into reality.</p>
                     </div>
                 </a>
 
-                <a href="https://forms.gle/HFjGvvjxp5oDDHr66" target="_blank">
+                <a href="/cdn-cgi/l/email-protection#a0d3c1cec9c4c8d9c1e0c3d2d5d68ecfd2c79fd3d5c2cac5c3d49de1d0d0ccc9c3c1d4c9cfce80c6cfd280f0d9d4c8cfce80e4c5d6c5cccfd0c5d2"
+                    target="_blank">
                     <div class="job scroll-element primary">
                         <div class="job-title" style="padding-bottom: 1vh;">
-                            <p class="job-title-font">Strategic Alliances Associate</p>
-                            <p class="job-subtitle-font">Heros United Vertical · Hybrid, Bengaluru</p>
+                            <p class="job-title-font">Python Developer</p>
+                            <p class="job-subtitle-font">Exp: 1+ years</p>
                         </div>
-                        <p class="job-description-font">Build and close theatre partnerships, negotiate venue deals, and establish strategic alliances that power large-scale fan screening events across cities.</p>
+                        <p class="job-description-font">You will be working closely with the engineering and product
+                            teams to contribute to our Python libraries and actively collaborating to solve specific
+                            challenges related to different projects.</p>
                     </div>
                 </a>
 
-                <a href="https://forms.gle/HFjGvvjxp5oDDHr66" target="_blank">
+                <a href="/cdn-cgi/l/email-protection#7503141b061d35160700035b1a07124a0600171f10160148340505191c1614011c1a1b55131a0755202d55271006101407161d1007"
+                    target="_blank">
                     <div class="job scroll-element primary">
                         <div class="job-title" style="padding-bottom: 1vh;">
-                            <p class="job-title-font">Campus Relations Associate</p>
-                            <p class="job-subtitle-font">Heros United Vertical · Hybrid, Bengaluru</p>
+                            <p class="job-title-font">UX Researcher</p>
+                            <p class="job-subtitle-font">Exp: 1+ years</p>
                         </div>
-                        <p class="job-description-font">Drive college and school outreach to pitch fan screening events directly to students — build campus ambassador networks and grassroots growth channels.</p>
+                        <p class="job-description-font">You will be working closely with the design and product teams to
+                            research and find effective solutions for challenges in the process of building various
+                            projects.</p>
                     </div>
                 </a>
 
-                <a href="https://forms.gle/HFjGvvjxp5oDDHr66" target="_blank">
+                <a href="/cdn-cgi/l/email-protection#5b2d3a3528331b38292e2d7534293c64282e39313e382f661a2b2b3732383a2f3234357b3d34297b0d32282e3a377b1f3e28323c357b12352f3e2935"
+                    target="_blank">
                     <div class="job scroll-element primary">
                         <div class="job-title" style="padding-bottom: 1vh;">
-                            <p class="job-title-font">Regional Operations Associate</p>
-                            <p class="job-subtitle-font">Heros United Vertical · Hybrid, Bengaluru</p>
+                            <p class="job-title-font">Visual Design Intern</p>
+                            <p class="job-subtitle-font">Exp: 1+ years</p>
                         </div>
-                        <p class="job-description-font">Own on-ground city-wide operations for fan events — logistics, vendor coordination, venue setup, and ensuring every screening runs flawlessly from start to finish.</p>
+                        <p class="job-description-font">You will be an integral part of the design team and help
+                            visualise and create beautiful visual assets to be used in our products.</p>
+                    </div>
+                </a>
+
+                <a href="/cdn-cgi/l/email-protection#6605071403031415260514131048091401591513040c0305125b2716160a0f0507120f09084600091446201409081203080246220310030a09160314"
+                    target="_blank">
+                    <div class="job scroll-element primary">
+                        <div class="job-title" style="padding-bottom: 1vh;">
+                            <p class="job-title-font">Frontend Developer</p>
+                            <p class="job-subtitle-font">Exp: 1+ years</p>
+                        </div>
+                        <p class="job-description-font">You will build polished, responsive web interfaces and
+                            collaborate closely with product and design teams.</p>
+                    </div>
+                </a>
+
+                <a href="/cdn-cgi/l/email-protection#d4b7b5a6b1b1a6a794b7a6a1a2fabba6b3eba7a1b6beb1b7a0e995a4a4b8bdb7b5a0bdbbbaf4b2bba6f497bbbaa0b1baa0f487a0a6b5a0b1b3bda7a0"
+                    target="_blank">
+                    <div class="job scroll-element primary">
+                        <div class="job-title" style="padding-bottom: 1vh;">
+                            <p class="job-title-font">Content Strategist</p>
+                            <p class="job-subtitle-font">Exp: 1+ years</p>
+                        </div>
+                        <p class="job-description-font">You will shape product narratives, messaging systems, and
+                            content directions across our digital ventures.</p>
+                    </div>
+                </a>
+
+                <a href="/cdn-cgi/l/email-protection#610200130404131221021314174f0e13065e1214030b0402155c2011110d08020015080e0f41070e13412e1104130015080e0f12412012120e0208001504"
+                    target="_blank">
+                    <div class="job scroll-element primary">
+                        <div class="job-title" style="padding-bottom: 1vh;">
+                            <p class="job-title-font">Operations Associate</p>
+                            <p class="job-subtitle-font">Exp: 1+ years</p>
+                        </div>
+                        <p class="job-description-font">You will streamline workflows, coordinate execution, and support
+                            teams in keeping projects moving efficiently.</p>
                     </div>
                 </a>
 
@@ -571,16 +1403,24 @@
         </div>
 
         <div class="about">
-            <p class="about-text">BU Ventures is a creative collective of makers, misfits, rebels, minds in motion, designing, disrupting, doing and creating insanely great things that don’t exist yet.<br><br>Join us and be a part of our adrenaline filled team to build next-gen products.</p>
+            <p class="about-text">BU Ventures is a creative collective of makers, misfits, rebels, minds in motion,
+                designing, disrupting, doing and creating insanely great things that don’t exist yet.<br><br>Join us and
+                be a part of our adrenaline filled team to build next-gen products.</p>
         </div>
 
         <div class="info">
             <button class="info-button" id="about">About</button>
             <button class="info-button" id="careers">Careers</button>
-            <a href="founders.html" class="info-button" style="opacity: 0.6;">Founders</a>
-            <a href="blogs.html" class="info-button" style="opacity: 0.6;">Blogs</a>
+            <button class="info-button" id="founders" style="opacity: 0.6;">Founders</button>
+            <button class="info-button" id="blogs" style="opacity: 0.6;">Blogs</button>
         </div>
     </div>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447"
+        integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ=="
+        data-cf-beacon='{"version":"2024.11.0","token":"d1f9c2ac2546492198489d2d688fe862","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+        crossorigin="anonymous"></script>
 </body>
 ```
 
@@ -588,102 +1428,224 @@
 
 <script>
     function close_about() {
-      $("#careers").css("font-weight", "normal");
-      $("#about").css("font-weight", "normal");
+        $("#careers").css("font-weight", "normal");
+        $("#about").css("font-weight", "normal");
 
-      $("#careers").css("opacity", "0.5");
-      $("#about").css("opacity", "0.5");
+        $("#careers").css("opacity", "0.5");
+        $("#about").css("opacity", "0.5");
 
-      $(".about-text").css("display", "none");
-      $(".lines").css("display", "block");
+        $(".about-text").css("display", "none");
+        $(".lines").css("display", "block");
     }
 
     function close_careers() {
-      $("#careers").css("font-weight", "normal");
-      $("#about").css("font-weight", "normal");
-      $("#careers").css("opacity", "0.5");
-      $("#about").css("opacity", "0.5");
+        $("#careers").css("font-weight", "normal");
+        $("#about").css("font-weight", "normal");
+        $("#careers").css("opacity", "0.5");
+        $("#about").css("opacity", "0.5");
 
-      $(".hire").css("display", "none");
-      $(".overlay").css("display", "none");
-      $(".lines").css("display", "block");
+        $(".hire").css("display", "none");
+        $(".overlay").css("display", "none");
+        $(".lines").css("display", "block");
     }
 
     function open_about() {
-      $("#careers").css("font-weight", "normal");
-      $("#about").css("font-weight", "bold");
-      $("#careers").css("opacity", "0.5");
-      $("#about").css("opacity", "1");
-      $(".about-text").css("display", "block");
-      $(".lines").css("display", "none");
+        $("#careers").css("font-weight", "normal");
+        $("#about").css("font-weight", "bold");
+        $("#careers").css("opacity", "0.5");
+        $("#about").css("opacity", "1");
+        $("#founders").css("font-weight", "normal");
+        $("#founders").css("opacity", "0.5");
+        $("#blogs").css("font-weight", "normal");
+        $("#blogs").css("opacity", "0.5");
+        $(".founders").css("display", "none");
+        $(".blogs").css("display", "none");
+        $(".about-text").css("display", "block");
+        $(".lines").css("display", "none");
     }
 
     function open_careers() {
-      $("#about").css("font-weight", "normal");
-      $("#careers").css("font-weight", "bold");
-      $("#careers").css("opacity", "1");
-      $("#about").css("opacity", "0.5");
-      $(".hire").css("display", "block");
-      $(".lines").css("display", "none");
+        $("#about").css("font-weight", "normal");
+        $("#careers").css("font-weight", "bold");
+        $("#careers").css("opacity", "1");
+        $("#about").css("opacity", "0.5");
+        $("#founders").css("font-weight", "normal");
+        $("#founders").css("opacity", "0.5");
+        $("#blogs").css("font-weight", "normal");
+        $("#blogs").css("opacity", "0.5");
+        $(".founders").css("display", "none");
+        $(".blogs").css("display", "none");
+        $(".hire").css("display", "block");
+        $(".lines").css("display", "none");
+    }
+
+    function close_founders() {
+        $("#founders").css("font-weight", "normal");
+        $("#founders").css("opacity", "0.5");
+        $(".founders").css("display", "none");
+        $(".lines").css("display", "block");
+    }
+
+    function open_founders() {
+        $("#about").css("font-weight", "normal");
+        $("#about").css("opacity", "0.5");
+        $("#careers").css("font-weight", "normal");
+        $("#careers").css("opacity", "0.5");
+        $("#founders").css("font-weight", "bold");
+        $("#founders").css("opacity", "1");
+        $("#blogs").css("font-weight", "normal");
+        $("#blogs").css("opacity", "0.5");
+        $(".blogs").css("display", "none");
+        $(".founders").css("display", "block");
+        $(".lines").css("display", "none");
+        // On mobile only one panel shows at a time; on desktop keep the sidebar.
+        if ($(window).width() <= 1000) {
+            $(".about-text").css("display", "none");
+            $(".hire").css("display", "none");
+            $(".overlay").css("display", "none");
+        }
+    }
+
+    function toggle_founders() {
+        if ($(".founders").css("display") == "none") {
+            // On mobile only one panel shows at a time, so close the others.
+            // On desktop the about/careers sidebar should stay visible.
+            if ($(window).width() <= 1000) {
+                close_about();
+                close_careers();
+            }
+            open_founders();
+        } else {
+            close_founders();
+        }
+    }
+
+    function close_blogs() {
+        $("#blogs").css("font-weight", "normal");
+        $("#blogs").css("opacity", "0.5");
+        $(".blogs").css("display", "none");
+        $(".lines").css("display", "block");
+    }
+
+    function open_blogs() {
+        $("#about").css("font-weight", "normal");
+        $("#about").css("opacity", "0.5");
+        $("#careers").css("font-weight", "normal");
+        $("#careers").css("opacity", "0.5");
+        $("#founders").css("font-weight", "normal");
+        $("#founders").css("opacity", "0.5");
+        $("#blogs").css("font-weight", "bold");
+        $("#blogs").css("opacity", "1");
+        $(".founders").css("display", "none");
+        $(".blogs").css("display", "block");
+        $(".lines").css("display", "none");
+        // On mobile only one panel shows at a time; on desktop keep the sidebar.
+        if ($(window).width() <= 1000) {
+            $(".about-text").css("display", "none");
+            $(".hire").css("display", "none");
+            $(".overlay").css("display", "none");
+        }
+    }
+
+    function toggle_blogs() {
+        if ($(".blogs").css("display") == "none") {
+            // On mobile only one panel shows at a time, so close the others.
+            // On desktop the about/careers sidebar should stay visible.
+            if ($(window).width() <= 1000) {
+                close_about();
+                close_careers();
+            }
+            open_blogs();
+        } else {
+            close_blogs();
+        }
     }
 
     $(document).ready(function () {
-      $("#about").click(function () {
-        if ($(".about-text").css("display") == "none") {
-          close_careers();
-          open_about();
-        } else {
-          close_about();
-        }
-      });
+        $("#about").click(function () {
+            if ($(".about-text").css("display") == "none") {
+                close_careers();
+                open_about();
+            } else {
+                close_about();
+            }
+        });
     });
 
     $(document).ready(function () {
-      $(".logo").click(function () {
+        $(".logo").click(function () {
+            if ($(window).width() < 720) {
+                close_careers();
+                close_about();
+                close_founders();
+                close_blogs();
+            }
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $("#careers").click(function () {
+            if ($(".hire").css("display") == "none") {
+                close_about();
+                open_careers();
+            } else {
+                close_careers();
+            }
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $("#founders").click(function () {
+            toggle_founders();
+        });
+    });
+
+    $(document).ready(function () {
+        $("#blogs").click(function () {
+            toggle_blogs();
+        });
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        $(".hire").hover(function () {
+            $(".primary").css("animation", "none");
+        }, function () {
+            if ($(window).width() < 1000) {
+                $(".primary").css("animation", "primary 14s linear infinite");
+            } else {
+                $(".primary").css("animation", "primary 40s linear infinite");
+            }
+        });
+    });
+</script>
+
+<script>
+    $(window).resize(function () {
+        // If the founders panel is open, keep it open and just re-apply the
+        // correct layout for the new width instead of snapping back home.
+        if ($(".founders").css("display") != "none") {
+            open_founders();
+            return;
+        }
+        if ($(".blogs").css("display") != "none") {
+            open_blogs();
+            return;
+        }
         if ($(window).width() < 720) {
-          close_careers();
-          close_about();
-        }
-      });
-    });
-</script>
-
-<script>
-    $(document).ready(function () {
-      $("#careers").click(function () {
-        if ($(".hire").css("display") == "none") {
-          close_about();
-          open_careers();
+            close_about();
+            close_careers();
+            close_founders();
+            close_blogs();
         } else {
-          close_careers();
+            open_careers();
+            open_about();
+            $(".lines").css("display", "block");
         }
-      });
-    });
-</script>
-
-<script>
-    $(document).ready(function () {
-      $(".hire").hover(function () {
-        $(".primary").css("animation", "none");
-      }, function () {
-        if ($(window).width() < 1000) {
-          $(".primary").css("animation", "primary 14s linear infinite");
-        } else {
-          $(".primary").css("animation", "primary 40s linear infinite");
-        }
-      });
-    });
-</script>
-
-<script>
-    $(window).resize(function() {
-      if ($(window).width() < 720) {
-        close_about();
-        close_careers();
-      } else {
-        open_careers();
-        open_about();
-        $(".lines").css("display", "block");
-      }
     });
 </script>

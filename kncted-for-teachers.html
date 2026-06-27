@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Built for Teachers, Loved by Parents — BU Ventures</title>
+    <meta name="description"
+        content="How KnctED keeps the whole school community connected without adding to anyone's workload.">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Built for Teachers, Loved by Parents — BU Ventures">
+    <meta property="og:description"
+        content="How KnctED keeps the whole school community connected without adding to anyone's workload.">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="android-chrome-192x192.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #0A0A0A;
+            --fg: #ffffff;
+            --pad: 6vw;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg);
+            color: var(--fg);
+            font-family: 'Space Grotesk', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 22px var(--pad);
+            background: linear-gradient(rgba(10, 10, 10, 0.95), rgba(10, 10, 10, 0.75));
+            backdrop-filter: blur(6px);
+        }
+
+        .logo-link img {
+            height: 34px;
+            width: auto;
+            display: block;
+        }
+
+        .back-link {
+            font-size: 14px;
+            letter-spacing: -0.2px;
+            opacity: 0.55;
+            transition: opacity 0.2s ease;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+        }
+
+        .article {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 70px 24px 40px;
+        }
+
+        .eyebrow {
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            opacity: 0.5;
+            margin: 0 0 22px;
+            text-transform: uppercase;
+        }
+
+        .article h1 {
+            font-size: clamp(2.1rem, 6vw, 3.4rem);
+            line-height: 1.04;
+            font-weight: 600;
+            letter-spacing: -1.8px;
+            margin: 0 0 22px;
+        }
+
+        .dek {
+            font-size: clamp(1.1rem, 2.6vw, 1.35rem);
+            line-height: 1.5;
+            font-weight: 300;
+            opacity: 0.72;
+            margin: 0 0 14px;
+        }
+
+        .divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.12);
+            margin: 36px 0;
+        }
+
+        .body p {
+            font-size: 1.075rem;
+            line-height: 1.75;
+            font-weight: 300;
+            opacity: 0.82;
+            margin: 0 0 1.4em;
+        }
+
+        .body h2 {
+            font-size: clamp(1.3rem, 3.4vw, 1.7rem);
+            font-weight: 600;
+            letter-spacing: -0.6px;
+            margin: 2.2em 0 0.7em;
+        }
+
+        .body strong {
+            font-weight: 600;
+            opacity: 1;
+        }
+
+        .pull {
+            font-size: clamp(1.3rem, 3.6vw, 1.7rem);
+            line-height: 1.4;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+            opacity: 0.95;
+            border-left: 2px solid rgba(255, 255, 255, 0.5);
+            padding-left: 24px;
+            margin: 2em 0;
+        }
+
+        .foot {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 28px 24px 90px;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 14px;
+            font-size: 13px;
+        }
+
+        .foot a {
+            opacity: 0.6;
+            transition: opacity 0.2s ease;
+        }
+
+        .foot a:hover {
+            opacity: 1;
+        }
+
+        .foot .copy {
+            opacity: 0.4;
+        }
+
+        @media screen and (max-width: 600px) {
+            .article {
+                padding: 48px 24px 32px;
+            }
+
+            .body p {
+                font-size: 1.02rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="topbar">
+        <a class="logo-link" href="index.html" aria-label="BU Ventures home">
+            <img src="https://res.cloudinary.com/dsgqia1gt/image/upload/q_auto/f_auto/v1775309859/BU_Ventures.png"
+                alt="BU Ventures">
+        </a>
+        <a class="back-link" href="index.html">← Back</a>
+    </header>
+
+    <main class="article">
+        <p class="eyebrow">KnctED · January 2026</p>
+        <h1>Built for Teachers, Loved by Parents</h1>
+        <p class="dek">How KnctED keeps the whole school community connected without adding to anyone's workload.</p>
+
+        <div class="divider"></div>
+
+        <div class="body">
+            <p>Most school software is sold to administrators, but it's lived in by teachers and parents. That gap is
+                why so much of it fails quietly — it looks great in a demo and becomes one more thing to manage by
+                week two.</p>
+
+            <p>KnctED was built from the other end: start with the people who use it every day, and make sure it
+                <strong>removes work instead of adding it.</strong></p>
+
+            <h2>For teachers: less admin, more teaching</h2>
+            <p>A teacher shouldn't need three apps to get through a morning. Attendance, homework, messages and updates
+                live in one flow, so the routine stuff takes minutes, not periods. The goal is simple — give teachers
+                their time back and let the platform handle the busywork.</p>
+
+            <h2>For parents: one place, no guesswork</h2>
+            <p>Parents don't want a new app to learn; they want to know what's going on. Fees, notices, homework,
+                attendance — all in one feed, in plain language, without digging through group chats. When everything
+                arrives in the same place, nothing important slips past.</p>
+
+            <p class="pull">The best tool in a school is the one nobody has to think about.</p>
+
+            <h2>For the school: one connected picture</h2>
+            <p>When teachers and parents are on the same platform, the school finally sees itself clearly — how
+                communication is landing, where students need support, what's working. Not more dashboards for their own
+                sake; just a connected view that was impossible when everything lived in separate tools.</p>
+
+            <h2>Designed to disappear</h2>
+            <p>Good school software isn't loud. It doesn't demand attention or pile on features. It quietly keeps a
+                community connected and then gets out of the way.</p>
+
+            <p>That's what we mean when we say KnctED is built for teachers and loved by parents — it earns its place by
+                making everyone's day a little lighter.</p>
+        </div>
+    </main>
+
+    <footer class="foot">
+        <a href="index.html">← All of BU Ventures</a>
+        <span class="copy">© 2026 BU Ventures Pvt. Ltd.</span>
+    </footer>
+</body>
+
+</html>

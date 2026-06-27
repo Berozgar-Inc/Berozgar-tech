@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hidden Cost of Tool Overload in Schools — BU Ventures</title>
+    <meta name="description"
+        content="Every extra login is friction for teachers and parents. What fragmented school software really costs — and how to cut it down to one.">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="The Hidden Cost of Tool Overload in Schools — BU Ventures">
+    <meta property="og:description"
+        content="Every extra login is friction for teachers and parents. What fragmented school software really costs — and how to cut it down to one.">
+
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    <link rel="apple-touch-icon" href="android-chrome-192x192.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #0A0A0A;
+            --fg: #ffffff;
+            --pad: 6vw;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg);
+            color: var(--fg);
+            font-family: 'Space Grotesk', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .topbar {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 22px var(--pad);
+            background: linear-gradient(rgba(10, 10, 10, 0.95), rgba(10, 10, 10, 0.75));
+            backdrop-filter: blur(6px);
+        }
+
+        .logo-link img {
+            height: 34px;
+            width: auto;
+            display: block;
+        }
+
+        .back-link {
+            font-size: 14px;
+            letter-spacing: -0.2px;
+            opacity: 0.55;
+            transition: opacity 0.2s ease;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+        }
+
+        .article {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 70px 24px 40px;
+        }
+
+        .eyebrow {
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.3px;
+            opacity: 0.5;
+            margin: 0 0 22px;
+            text-transform: uppercase;
+        }
+
+        .article h1 {
+            font-size: clamp(2.1rem, 6vw, 3.4rem);
+            line-height: 1.04;
+            font-weight: 600;
+            letter-spacing: -1.8px;
+            margin: 0 0 22px;
+        }
+
+        .dek {
+            font-size: clamp(1.1rem, 2.6vw, 1.35rem);
+            line-height: 1.5;
+            font-weight: 300;
+            opacity: 0.72;
+            margin: 0 0 14px;
+        }
+
+        .divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.12);
+            margin: 36px 0;
+        }
+
+        .body p {
+            font-size: 1.075rem;
+            line-height: 1.75;
+            font-weight: 300;
+            opacity: 0.82;
+            margin: 0 0 1.4em;
+        }
+
+        .body h2 {
+            font-size: clamp(1.3rem, 3.4vw, 1.7rem);
+            font-weight: 600;
+            letter-spacing: -0.6px;
+            margin: 2.2em 0 0.7em;
+        }
+
+        .body strong {
+            font-weight: 600;
+            opacity: 1;
+        }
+
+        .pull {
+            font-size: clamp(1.3rem, 3.6vw, 1.7rem);
+            line-height: 1.4;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+            opacity: 0.95;
+            border-left: 2px solid rgba(255, 255, 255, 0.5);
+            padding-left: 24px;
+            margin: 2em 0;
+        }
+
+        .foot {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 28px 24px 90px;
+            border-top: 1px solid rgba(255, 255, 255, 0.12);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 14px;
+            font-size: 13px;
+        }
+
+        .foot a {
+            opacity: 0.6;
+            transition: opacity 0.2s ease;
+        }
+
+        .foot a:hover {
+            opacity: 1;
+        }
+
+        .foot .copy {
+            opacity: 0.4;
+        }
+
+        @media screen and (max-width: 600px) {
+            .article {
+                padding: 48px 24px 32px;
+            }
+
+            .body p {
+                font-size: 1.02rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="topbar">
+        <a class="logo-link" href="index.html" aria-label="BU Ventures home">
+            <img src="https://res.cloudinary.com/dsgqia1gt/image/upload/q_auto/f_auto/v1775309859/BU_Ventures.png"
+                alt="BU Ventures">
+        </a>
+        <a class="back-link" href="index.html">← Back</a>
+    </header>
+
+    <main class="article">
+        <p class="eyebrow">KnctED · February 2026</p>
+        <h1>The Hidden Cost of Tool Overload in Schools</h1>
+        <p class="dek">Every extra login is friction for teachers and parents. What fragmented school software really
+            costs — and how to cut it down to one.</p>
+
+        <div class="divider"></div>
+
+        <div class="body">
+            <p>Tool overload is invisible until you actually count it. Ask a school how many apps and systems it runs
+                and the answer is usually "a few." Then you start listing: attendance, fees, the parent group, the
+                homework channel, the results sheet, the notice system, the calendar… and "a few" quietly becomes a
+                dozen.</p>
+
+            <p>None of it looks like a problem on the invoice. The cost shows up somewhere harder to see — in time,
+                attention, and trust.</p>
+
+            <h2>The teacher's tax</h2>
+            <p>A teacher's job is to teach. Yet a fragmented stack turns a chunk of every week into data entry — marking
+                attendance in one place, messaging parents in another, uploading homework in a third, then reconciling
+                when the numbers don't match. <strong>The same information, re-entered, in three different
+                    tools.</strong></p>
+
+            <h2>The parent's confusion</h2>
+            <p>For parents it's the opposite problem: not too much work, but too many places to look. A fee reminder
+                here, a holiday notice there, homework somewhere else, half of it buried in a group chat. When updates
+                are scattered, the important one is the one that gets missed.</p>
+
+            <p class="pull">Every extra login is a small tax on the people who can least afford the distraction.</p>
+
+            <h2>Data that can't see itself</h2>
+            <p>The quieter cost is fragmentation of information. When attendance, academics, fees and communication live
+                in separate systems, nobody sees the whole student. The signals that should connect — a dip in
+                attendance, a missed fee, a string of incomplete homework — stay locked in their own silos.</p>
+
+            <h2>Cutting it down to one</h2>
+            <p>The fix isn't a thirteenth tool. It's consolidation. When the whole school runs on one platform, the
+                re-entry disappears, the updates land in one place, and the data finally sits together.</p>
+
+            <p>That's the entire idea behind KnctED — <strong>replace the twelve tools with one</strong>, and give
+                everyone back the time and clarity the sprawl was quietly taking.</p>
+        </div>
+    </main>
+
+    <footer class="foot">
+        <a href="index.html">← All of BU Ventures</a>
+        <span class="copy">© 2026 BU Ventures Pvt. Ltd.</span>
+    </footer>
+</body>
+
+</html>

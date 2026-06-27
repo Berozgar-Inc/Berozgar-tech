@@ -17,13 +17,13 @@
     <title>BU Ventures | The Creative Collective</title>
     <meta charset="utf-8">
     <meta name="description"
-        content="BU Ventures is a creative collective of makers, misfits, rebels and minds in motion — designing, disrupting and building insanely great digital products that don't exist yet.">
+        content="BU Ventures is a creative collective of makers, misfits, rebels and minds in motion — designing, disrupting and building insanely great products that don't exist yet.">
     <meta name="keywords" content="BU Ventures, buventures, digital products, ventures">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="BU Ventures - building next gen digital products">
+    <meta property="og:title" content="BU Ventures - building next gen products">
     <meta property="og:description"
-        content="BU Ventures is a creative collective of makers, misfits, rebels and minds in motion — designing, disrupting and building insanely great digital products that don't exist yet.">
+        content="BU Ventures is a creative collective of makers, misfits, rebels and minds in motion — designing, disrupting and building insanely great products that don't exist yet.">
     <meta property="og:image" content="https://buventures.tech/static/social.png">
     <meta property="og:url" content="https://buventures.tech/">
 
@@ -112,6 +112,7 @@
 
         .brand-text h1 {
             margin: 0;
+            white-space: nowrap;
         }
 
         .brand-text .slider-subtext {
@@ -435,11 +436,12 @@
                 position: absolute;
                 bottom: var(--padding);
                 left: var(--padding);
-                width: 25vh;
+                width: min(25vh, 180px);
             }
 
             .logo-text {
                 font-family: 'Space Grotesk', sans-serif;
+                white-space: nowrap;
             }
 
             .mobile-brand {
@@ -583,7 +585,7 @@
 
             .founders {
                 position: absolute;
-                top: 22vh;
+                top: 16vh;
                 left: var(--padding);
                 max-width: 52vw;
                 z-index: 5;
@@ -612,8 +614,8 @@
             }
 
             .founder-photo {
-                width: 10vw;
-                height: 12vw;
+                width: min(10vw, 130px);
+                height: min(12vw, 156px);
                 object-fit: cover;
                 border-radius: 10px;
                 margin-bottom: 1vw;
@@ -658,17 +660,22 @@
 
             .blogs {
                 position: absolute;
-                top: 10vh;
+                top: 9vh;
+                /* bottom tracks the logo footprint (padding + logo block) so the
+                   list never collides with the bottom-left logo on any aspect ratio */
+                bottom: calc(6vw + 25vh);
                 left: var(--padding);
                 max-width: 52vw;
                 z-index: 5;
                 display: none;
+                flex-direction: column;
             }
 
             .blog-list {
                 position: relative;
                 overflow: hidden;
-                height: 46vh;
+                flex: 1 1 auto;
+                min-height: 0;
             }
 
             .blog-track {
@@ -728,7 +735,7 @@
             }
 
             .logo img {
-                width: 22vw !important;
+                width: min(22vw, 72px) !important;
             }
 
             .logo-text {
@@ -743,6 +750,7 @@
                 letter-spacing: -0.5px;
                 color: #fff;
                 line-height: 1.2;
+                white-space: nowrap;
             }
 
             .lines {
@@ -919,17 +927,21 @@
 
             .blogs {
                 position: absolute;
-                top: 23vh;
+                /* floor keeps the panel below the (now fixed-size) logo on short screens */
+                top: max(23vh, 112px);
+                bottom: max(23vh, 100px);
                 left: var(--padding);
                 right: var(--padding);
                 z-index: 5;
                 display: none;
+                flex-direction: column;
             }
 
             .blog-list {
                 position: relative;
                 overflow: hidden;
-                height: 47vh;
+                flex: 1 1 auto;
+                min-height: 0;
             }
 
             .blog-track {
@@ -1129,8 +1141,8 @@
     </div>
 
     <div class="logo">
-        <img src="https://res.cloudinary.com/dsgqia1gt/image/upload/q_auto/f_auto/v1775309859/BU_Ventures.png"
-            alt="logo" style="width: 70%;">
+        <img src="https://res.cloudinary.com/dsgqia1gt/image/upload/v1782601778/BU_Ventures_logo.png" alt="logo"
+            style="width: 70%;">
         <div class="mobile-brand">© 2026 BU VENTURES PVT. LTD.</div>
         <p style="font-size: 12px;" class="logo-text"> © 2026 BU VENTURES PVT. LTD. </p>
         <p style="font-size: 10px; padding-top: 1px;" class="logo-text">
@@ -1422,7 +1434,7 @@
         data-cf-beacon='{"version":"2024.11.0","token":"d1f9c2ac2546492198489d2d688fe862","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
         crossorigin="anonymous"></script>
 </body>
-```
+
 
 </html>
 
@@ -1537,7 +1549,7 @@
         $("#blogs").css("font-weight", "bold");
         $("#blogs").css("opacity", "1");
         $(".founders").css("display", "none");
-        $(".blogs").css("display", "block");
+        $(".blogs").css("display", "flex");
         $(".lines").css("display", "none");
         // On mobile only one panel shows at a time; on desktop keep the sidebar.
         if ($(window).width() <= 1000) {

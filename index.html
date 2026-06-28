@@ -40,6 +40,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <style>
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
         a {
             text-decoration: none;
         }
@@ -98,6 +104,14 @@
 
         .slider li.anim6 {
             animation: cycle6 36s linear infinite;
+        }
+
+        /* soft fade at the bottom edge so the rolling names dissolve out as
+           they slide down, instead of hard-clipping (the resting name sits in
+           the solid upper band so it stays crisp) */
+        .mask {
+            -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 60%, transparent 100%);
+            mask-image: linear-gradient(to bottom, #000 0%, #000 60%, transparent 100%);
         }
 
         .brand-row {
@@ -772,7 +786,9 @@
             .mask {
                 overflow: hidden;
                 height: 24vw;
-                width: 100vw;
+                /* sits inside .lines (offset left by --padding); subtract it so it
+                   never spills past the right edge and cause horizontal/diagonal scroll */
+                width: calc(100vw - var(--padding));
             }
 
             .info {
@@ -1146,7 +1162,7 @@
         <div class="mobile-brand">© 2026 BU VENTURES PVT. LTD.</div>
         <p style="font-size: 12px;" class="logo-text"> © 2026 BU VENTURES PVT. LTD. </p>
         <p style="font-size: 10px; padding-top: 1px;" class="logo-text">
-            <a href="/cdn-cgi/l/email-protection#eaca8298c79e8f8b87aa89989f9cc485988d" style="color: #fff;">[ CONTACT US
+            <a href="mailto:info@buventures.tech" style="color: #fff;">[ CONTACT US
                 ]</a>
             <a href="javascript:void(0)" onclick="toggle_founders()" style="color: #fff; margin-left: 10px;">[ FOUNDERS
                 ]</a>

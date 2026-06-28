@@ -21,11 +21,22 @@
     <meta name="keywords" content="BU Ventures, buventures, digital products, ventures">
 
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="BU Ventures">
     <meta property="og:title" content="BU Ventures - building next gen products">
     <meta property="og:description"
         content="BU Ventures is a creative collective of makers, misfits, rebels and minds in motion — designing, disrupting and building insanely great products that don't exist yet.">
     <meta property="og:image" content="https://buventures.tech/static/social.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="BU Ventures — The Creative Collective">
     <meta property="og:url" content="https://buventures.tech/">
+
+    <!-- Twitter / X card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="BU Ventures - building next gen products">
+    <meta name="twitter:description"
+        content="BU Ventures is a creative collective of makers, misfits, rebels and minds in motion — designing, disrupting and building insanely great products that don't exist yet.">
+    <meta name="twitter:image" content="https://buventures.tech/static/social.png">
 
     <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#0A0A0A" />
@@ -83,27 +94,27 @@
         }
 
         .slider li.anim1 {
-            animation: cycle 36s linear infinite;
+            animation: cycle 15s linear infinite;
         }
 
         .slider li.anim2 {
-            animation: cycle2 36s linear infinite;
+            animation: cycle2 15s linear infinite;
         }
 
         .slider li.anim3 {
-            animation: cycle3 36s linear infinite;
+            animation: cycle3 15s linear infinite;
         }
 
         .slider li.anim4 {
-            animation: cycle4 36s linear infinite;
+            animation: cycle4 15s linear infinite;
         }
 
         .slider li.anim5 {
-            animation: cycle5 36s linear infinite;
+            animation: cycle5 15s linear infinite;
         }
 
         .slider li.anim6 {
-            animation: cycle6 36s linear infinite;
+            animation: cycle6 15s linear infinite;
         }
 
         /* soft fade at the bottom edge so the rolling names dissolve out as
@@ -1642,13 +1653,12 @@
 <script>
     $(document).ready(function () {
         $(".hire").hover(function () {
-            $(".primary").css("animation", "none");
+            // Freeze the roller exactly where it is instead of removing the
+            // animation (which snapped it back to the start).
+            $(".primary").css("animation-play-state", "paused");
         }, function () {
-            if ($(window).width() < 1000) {
-                $(".primary").css("animation", "primary 14s linear infinite");
-            } else {
-                $(".primary").css("animation", "primary 40s linear infinite");
-            }
+            // Resume from the paused position.
+            $(".primary").css("animation-play-state", "running");
         });
     });
 </script>
